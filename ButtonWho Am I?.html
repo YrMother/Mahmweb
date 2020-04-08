@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+   
+    <p>
+        <button id="getquotes" value="I am" onclick="Loadquotes()"> I am </button>
+        <p id="quoteshere" ></p>
+            <script>
+    function Loadquotes(){
+    var quotes = new Array('Your Mother','Your Sister','A Punk','Smelly','Unshaven','Fabulous','Unique','Amazing AF','A little thick these days','Packed','Ready to Roll','Fantastic');
+    var newquotes = Math.floor(Math.random() * quotes.length);
+    document.getElementById('quoteshere').innerHTML = quotes[newquotes];
+
+     }
+            </script>
+    </p>
+
+  </body>
+</html>
